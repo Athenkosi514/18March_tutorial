@@ -24,9 +24,14 @@ document.getElementById("submit").addEventListener("click" , function(event){
     let task = document.getElementById("input").value ;
     
     let list = document.getElementById("list") ;
+    let output = document.getElementById("output");
     if(task ==""){
-              alert("Enter a task !!");
-              return;
+            //   alert("Enter a task !!");
+            //   return;
+            output.innerHTML ="Do not leave empty spaces!!";
+            output.style.color ="red";
+            return;
+
             }
 
 
